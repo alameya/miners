@@ -1,0 +1,204 @@
+15:04:56:272	44558740	args: -epool us1.ethpool.org:3333 -ewal 0xD69af2A796A737A103F12d2f0BCC563a13900E6F -epsw x -dpool stratum+tcp://dcr.suprnova.cc:3252 -dwal Redhex.my -dpsw x 
+15:04:56:273	44558740	
+15:04:56:273	44558740	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+15:04:56:273	44558740	บ      Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v9.3      บ
+15:04:56:273	44558740	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+15:04:56:273	44558740	
+15:04:56:474	44558740	ETH: 1 pool is specified
+15:04:56:474	44558740	Main Ethereum pool is us1.ethpool.org:3333
+15:04:56:474	44558740	DCR: 1 pool is specified
+15:04:56:474	44558740	Main Decred pool is dcr.suprnova.cc:3252
+15:04:56:722	44558740	OpenCL platform: AMD Accelerated Parallel Processing
+15:04:56:722	44558740	OpenCL initializing...
+
+15:04:56:722	44558740	AMD Cards available: 1 
+15:04:56:722	44558740	GPU #0: Ellesmere, 4081 MB available, 36 compute units
+15:04:56:722	44558740	GPU #0 recognized as Radeon RX 480/580
+15:04:56:722	44558740	POOL/SOLO version
+15:04:56:722	44558740	b343 
+15:04:56:722	44558740	Platform: Linux
+15:04:56:772	44558740	start building OpenCL program for GPU 0...
+15:04:56:998	44558740	done
+15:04:57:202	44558740	GPU #0: algorithm ASM
+15:04:57:203	44558740	cudaGetDeviceCount failed (35, CUDA driver version is insufficient for CUDA runtime version), probably no CUDA devices
+15:04:57:203	44558740	No NVIDIA CUDA GPUs detected.
+15:04:57:203	44558740	Total cards: 1 
+15:05:06:160	44558740	AMD ADL library not found.
+15:05:06:161	44558740	amdgpu cnt: 1
+15:05:06:161	44558740	No NVIDIA cards in the list, NVML library will not be used.
+15:05:06:164	2ffff700	ETH: Stratum - connecting to 'us1.ethpool.org' <149.56.26.222> port 3333
+15:05:06:262	44558740	DUAL MINING MODE ENABLED: ETHEREUM+DECRED
+15:05:06:262	44558740	ETH: eth-proxy stratum mode
+15:05:06:262	44558740	Watchdog enabled
+15:05:06:262	44558740	Remote management (READ-ONLY MODE) is enabled on port 3333
+15:05:06:262	44558740	
+15:05:06:325	2ffff700	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0xD69af2A796A737A103F12d2f0BCC563a13900E6F", "x"], "id": 2, "method": "eth_submitLogin"}
+
+15:05:06:325	2ffff700	ETH: Stratum - Connected (us1.ethpool.org:3333)
+15:05:06:328	2f7fe700	 DCR: Stratum - connecting to 'dcr.suprnova.cc' <217.182.138.167> port 3252
+15:05:06:401	2f7fe700	send: {"id": 1, "method": "mining.subscribe", "params": ["dual 1.0"]}
+
+15:05:06:401	2f7fe700	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+15:05:06:401	2f7fe700	send: {"id": 2, "method": "mining.authorize", "params": ["Redhex.my","x"]}
+
+15:05:06:401	2f7fe700	 DCR: Stratum - Connected (dcr.suprnova.cc:3252)
+15:05:06:482	2f7fe700	got 118 bytes
+15:05:06:482	2f7fe700	buf: {"id":1,"result":[[["mining.notify","deadbeefcafebabe0580090000000000"]],"87f8b60c2a63cf80e1b967b2",12],"error":null}
+
+15:05:06:482	2f7fe700	parse packet: 117
+15:05:06:482	2f7fe700	new buf size: 0
+15:05:06:487	2ffff700	got 39 bytes
+15:05:06:487	2ffff700	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+15:05:06:487	2ffff700	parse packet: 38
+15:05:06:487	2ffff700	ETH: Authorized
+15:05:06:487	2ffff700	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:05:06:487	2ffff700	new buf size: 0
+15:05:06:553	2f7fe700	got 459 bytes
+15:05:06:553	2f7fe700	buf: {"id":null,"method":"mining.set_difficulty","params":[8]}
+{"id":null,"method":"mining.notify","params":["98b6","42b2c1b76209e6b73f9e16cfbfd85560c6b4b7f977aa6498000000c200000000","bc70f0e443546f79406a4b5074e5bef0345f54104438677566f2afbeed47249684e7e6ce17fe2d9552131e5c742cf5bc469686089918c8810795591a090b69e4010019543b9322be050000009fad0000990f021a4a5145700200000021090200651500004d9919590000000000000000","04000000",[],"04000000","1a020f99","5919994d",true]}
+
+15:05:06:553	2f7fe700	parse packet: 57
+15:05:06:553	2f7fe700	remove first packet 401
+15:05:06:553	2f7fe700	new buf size: 401
+15:05:06:553	2f7fe700	parse packet: 400
+15:05:06:553	2f7fe700	new buf size: 0
+15:05:06:622	2f7fe700	got 36 bytes
+15:05:06:622	2f7fe700	buf: {"id":2,"result":true,"error":null}
+
+15:05:06:622	2f7fe700	parse packet: 35
+15:05:06:622	2f7fe700	 DCR: Authorized
+15:05:06:622	2f7fe700	new buf size: 0
+15:05:06:649	2ffff700	got 248 bytes
+15:05:06:649	2ffff700	buf: {"id":3,"jsonrpc":"2.0","result":["0xa85798f529f84a7ffe83b6374051dbce07090a1d3818b02670ce83543e0dc8b7","0x3bd437c45bff02acb2964c2f09e481e31c61a03eba0cf17d2c30cb05b1ac4d91","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x389f2a"]}
+
+15:05:06:649	2ffff700	parse packet: 247
+15:05:06:649	2ffff700	ETH: job changed
+15:05:06:649	2ffff700	new buf size: 0
+15:05:06:669	34c3a700	Setting DAG epoch #123...
+15:05:08:711	34c3a700	Setting DAG epoch #123 for GPU0
+15:05:08:711	34c3a700	Create GPU buffer for GPU0
+15:05:14:321	34c3a700	GPU0 DAG creation time - 5598 ms
+15:05:14:321	34c3a700	Setting DAG epoch #123 for GPU0 done
+15:05:14:458	2ffff700	got 248 bytes
+15:05:14:458	2ffff700	buf: {"id":0,"jsonrpc":"2.0","result":["0xcb0d75da1b63dc7b1c3b26410c97379c6f3b8ec0a08dd2d9fa280330569ff80c","0x3bd437c45bff02acb2964c2f09e481e31c61a03eba0cf17d2c30cb05b1ac4d91","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x389f2b"]}
+
+15:05:14:458	2ffff700	parse packet: 247
+15:05:14:458	2ffff700	ETH: job changed
+15:05:14:458	2ffff700	new buf size: 0
+15:05:14:458	2ffff700	ETH: 05/15/17-15:05:14 - New job from us1.ethpool.org:3333
+15:05:14:458	2ffff700	target: 0x0000000112e0be82 (diff: 4000MH), epoch #123
+15:05:14:458	2ffff700	ETH - Total Speed: 20.020 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+15:05:14:458	2ffff700	ETH: GPU0 20.020 Mh/s
+15:05:14:458	2ffff700	 DCR - Total Speed: 600.609 Mh/s, Total Shares: 0, Rejected: 0
+15:05:14:459	2ffff700	 DCR: GPU0 600.609 Mh/s
+15:05:15:595	2ffff700	got 248 bytes
+15:05:15:595	2ffff700	buf: {"id":0,"jsonrpc":"2.0","result":["0x37ae6a032719c2149000523c086b83b38bdc08cc9dc7dcb54443bd668c9ef27b","0x3bd437c45bff02acb2964c2f09e481e31c61a03eba0cf17d2c30cb05b1ac4d91","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x389f2c"]}
+
+15:05:15:595	2ffff700	parse packet: 247
+15:05:15:595	2ffff700	ETH: job changed
+15:05:15:595	2ffff700	new buf size: 0
+15:05:15:596	2ffff700	ETH: 05/15/17-15:05:15 - New job from us1.ethpool.org:3333
+15:05:15:596	2ffff700	target: 0x0000000112e0be82 (diff: 4000MH), epoch #123
+15:05:15:597	2ffff700	ETH - Total Speed: 21.747 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+15:05:15:597	2ffff700	ETH: GPU0 21.747 Mh/s
+15:05:15:598	2ffff700	 DCR - Total Speed: 652.400 Mh/s, Total Shares: 0, Rejected: 0
+15:05:15:599	2ffff700	 DCR: GPU0 652.400 Mh/s
+15:05:16:650	2ffff700	ETH: checking pool connection...
+15:05:16:650	2ffff700	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:05:16:812	2ffff700	got 248 bytes
+15:05:16:812	2ffff700	buf: {"id":3,"jsonrpc":"2.0","result":["0x37ae6a032719c2149000523c086b83b38bdc08cc9dc7dcb54443bd668c9ef27b","0x3bd437c45bff02acb2964c2f09e481e31c61a03eba0cf17d2c30cb05b1ac4d91","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x389f2c"]}
+
+15:05:16:812	2ffff700	parse packet: 247
+15:05:16:812	2ffff700	ETH: job is the same
+15:05:16:812	2ffff700	new buf size: 0
+15:05:21:850	34c3a700	DCR: put share nonce 399ffe3 enonce 7c260045
+15:05:21:850	34c3a700	DCR round found 1 shares
+15:05:21:851	2f7fe700	 DCR: 05/15/17-15:05:21 - SHARE FOUND - (GPU 0)
+15:05:21:851	2f7fe700	send: {"params": ["Redhex.my", "98b6", "87f8b60c7c260045e1b967b2", "5919994d", "e3ff9903"], "id": 4, "method": "mining.submit"}
+
+15:05:21:927	2f7fe700	got 36 bytes
+15:05:21:927	2f7fe700	buf: {"id":4,"result":true,"error":null}
+
+15:05:21:927	2f7fe700	parse packet: 35
+15:05:21:928	2f7fe700	 DCR: Share accepted (76 ms)!
+15:05:21:928	2f7fe700	new buf size: 0
+15:05:24:756	2f7fe700	got 402 bytes
+15:05:24:756	2f7fe700	buf: {"id":null,"method":"mining.notify","params":["98b7","42b2c1b76209e6b73f9e16cfbfd85560c6b4b7f977aa6498000000c200000000","bc70f0e443546f79406a4b5074e5bef0345f54104438677566f2afbeed47249684e7e6ce17fe2d9552131e5c742cf5bc469686089918c8810795591a090b69e4010019543b9322be050000009fad0000990f021a4a514570020000002109020065150000849919590000000000000000","04000000",[],"04000000","1a020f99","59199984",false]}
+
+15:05:24:756	2f7fe700	parse packet: 401
+15:05:24:756	2f7fe700	new buf size: 0
+15:05:24:757	2f7fe700	 DCR: 05/15/17-15:05:24 - New job from dcr.suprnova.cc:3252
+15:05:24:757	2f7fe700	target: 0x000000001fffe000 (diff: 34GH), block #133409
+15:05:26:650	2ffff700	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x14afc5c", "0x0000000000000000000000000000000000000000000000000000000006973491"]}
+
+15:05:26:651	2ffff700	ETH: checking pool connection...
+15:05:26:651	2ffff700	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:05:26:810	2ffff700	got 39 bytes
+15:05:26:810	2ffff700	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+15:05:26:810	2ffff700	parse packet: 38
+15:05:26:810	2ffff700	new buf size: 0
+15:05:26:971	2ffff700	got 248 bytes
+15:05:26:971	2ffff700	buf: {"id":3,"jsonrpc":"2.0","result":["0x37ae6a032719c2149000523c086b83b38bdc08cc9dc7dcb54443bd668c9ef27b","0x3bd437c45bff02acb2964c2f09e481e31c61a03eba0cf17d2c30cb05b1ac4d91","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x389f2c"]}
+
+15:05:26:971	2ffff700	parse packet: 247
+15:05:26:971	2ffff700	ETH: job is the same
+15:05:26:971	2ffff700	new buf size: 0
+15:05:27:455	2ffff700	got 248 bytes
+15:05:27:455	2ffff700	buf: {"id":0,"jsonrpc":"2.0","result":["0xb80bb71405091ced89e32cfd02c12782e0201c0b672c9f6a2bd51f1814c9e66d","0x3bd437c45bff02acb2964c2f09e481e31c61a03eba0cf17d2c30cb05b1ac4d91","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x389f2d"]}
+
+15:05:27:455	2ffff700	parse packet: 247
+15:05:27:455	2ffff700	ETH: job changed
+15:05:27:455	2ffff700	new buf size: 0
+15:05:27:456	2ffff700	ETH: 05/15/17-15:05:27 - New job from us1.ethpool.org:3333
+15:05:27:456	2ffff700	target: 0x0000000112e0be82 (diff: 4000MH), epoch #123
+15:05:27:457	2ffff700	ETH - Total Speed: 21.726 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+15:05:27:458	2ffff700	ETH: GPU0 21.726 Mh/s
+15:05:27:459	2ffff700	 DCR - Total Speed: 651.769 Mh/s, Total Shares: 1, Rejected: 0
+15:05:27:460	2ffff700	 DCR: GPU0 651.769 Mh/s
+15:05:36:300	44558740	GPU0 t=49C fan=37%
+15:05:36:300	44558740	em hbt: 1, dm hbt: 1, fm hbt: 4, 
+15:05:36:300	44558740	watchdog - thread 0, hb time 139
+15:05:36:300	44558740	watchdog - thread 1, hb time 30
+15:05:36:652	2ffff700	ETH: checking pool connection...
+15:05:36:652	2ffff700	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:05:36:814	2ffff700	got 248 bytes
+15:05:36:814	2ffff700	buf: {"id":3,"jsonrpc":"2.0","result":["0xb80bb71405091ced89e32cfd02c12782e0201c0b672c9f6a2bd51f1814c9e66d","0x3bd437c45bff02acb2964c2f09e481e31c61a03eba0cf17d2c30cb05b1ac4d91","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x389f2d"]}
+
+15:05:36:814	2ffff700	parse packet: 247
+15:05:36:814	2ffff700	ETH: job is the same
+15:05:36:814	2ffff700	new buf size: 0
+15:05:37:793	34c3a700	DCR: put share nonce 6274170 enonce 57f50075
+15:05:37:793	34c3a700	DCR round found 1 shares
+15:05:37:798	2f7fe700	 DCR: 05/15/17-15:05:37 - SHARE FOUND - (GPU 0)
+15:05:37:798	2f7fe700	send: {"params": ["Redhex.my", "98b7", "87f8b60c57f50075e1b967b2", "59199984", "70412706"], "id": 4, "method": "mining.submit"}
+
+15:05:37:872	2f7fe700	got 36 bytes
+15:05:37:872	2f7fe700	buf: {"id":4,"result":true,"error":null}
+
+15:05:37:872	2f7fe700	parse packet: 35
+15:05:37:876	2f7fe700	 DCR: Share accepted (74 ms)!
+15:05:37:876	2f7fe700	new buf size: 0
+15:05:46:651	2ffff700	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x14c1a73", "0x0000000000000000000000000000000000000000000000000000000006973491"]}
+
+15:05:46:653	2ffff700	ETH: checking pool connection...
+15:05:46:653	2ffff700	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:05:46:812	2ffff700	got 39 bytes
+15:05:46:812	2ffff700	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+15:05:46:812	2ffff700	parse packet: 38
+15:05:46:812	2ffff700	new buf size: 0
+15:05:46:972	2ffff700	got 248 bytes
+15:05:46:972	2ffff700	buf: {"id":3,"jsonrpc":"2.0","result":["0xb80bb71405091ced89e32cfd02c12782e0201c0b672c9f6a2bd51f1814c9e66d","0x3bd437c45bff02acb2964c2f09e481e31c61a03eba0cf17d2c30cb05b1ac4d91","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x389f2d"]}
+
+15:05:46:972	2ffff700	parse packet: 247
+15:05:46:972	2ffff700	ETH: job is the same
+15:05:46:972	2ffff700	new buf size: 0
+15:05:53:196	44558740	Quit signal received...

@@ -1,0 +1,90 @@
+16:16:57:222	d810d740	args: -epool eu1.ethpool.org:3333 -ewal 0x63e4bd10ab6082a0f79ad69420be7bf843a01765.r01/yaraul@gmail.com -epsw x 
+16:16:57:222	d810d740	
+16:16:57:223	d810d740	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+16:16:57:223	d810d740	บ      Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v9.3      บ
+16:16:57:223	d810d740	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+16:16:57:224	d810d740	
+16:16:57:425	d810d740	ETH: 1 pool is specified
+16:16:57:427	d810d740	Main Ethereum pool is eu1.ethpool.org:3333
+16:16:57:428	d810d740	DCR: 0 pool is specified
+16:16:57:468	d810d740	OpenCL platform: AMD Accelerated Parallel Processing
+16:16:57:473	d810d740	OpenCL initializing...
+
+16:16:57:474	d810d740	AMD Cards available: 1 
+16:16:57:474	d810d740	GPU #0: Ellesmere, 4081 MB available, 36 compute units
+16:16:57:475	d810d740	GPU #0 recognized as Radeon RX 480/580
+16:16:57:476	d810d740	POOL/SOLO version
+16:16:57:476	d810d740	b343 
+16:16:57:476	d810d740	Platform: Linux
+16:16:57:520	d810d740	start building OpenCL program for GPU 0...
+16:16:57:610	d810d740	done
+16:16:57:818	d810d740	GPU #0: algorithm ASM
+16:16:57:819	d810d740	cudaGetDeviceCount failed (35, CUDA driver version is insufficient for CUDA runtime version), probably no CUDA devices
+16:16:57:820	d810d740	No NVIDIA CUDA GPUs detected.
+16:16:57:820	d810d740	Total cards: 1 
+16:17:07:275	d810d740	AMD ADL library not found.
+16:17:07:278	d810d740	amdgpu cnt: 1
+16:17:07:278	d810d740	No NVIDIA cards in the list, NVML library will not be used.
+16:17:07:382	d810d740	No pool specified for Decred! Ethereum-only mining mode is enabled
+16:17:07:384	d810d740	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+16:17:07:387	d810d740	ETH: eth-proxy stratum mode
+16:17:07:390	d810d740	Watchdog enabled
+16:17:07:393	d810d740	Remote management (READ-ONLY MODE) is enabled on port 3333
+16:17:07:396	d810d740	
+16:17:08:821	c37fe700	ETH: Stratum - connecting to 'eu1.ethpool.org' <188.165.235.31> port 3333
+16:17:08:902	c37fe700	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x63e4bd10ab6082a0f79ad69420be7bf843a01765.r01/yaraul@gmail.com", "x"], "id": 2, "method": "eth_submitLogin"}
+
+16:17:08:905	c37fe700	ETH: Stratum - Connected (eu1.ethpool.org:3333)
+16:17:08:986	c37fe700	got 77 bytes
+16:17:08:986	c37fe700	buf: {"id":999,"jsonrpc": "2.0","result": false,"error": "Invalid user provided"}
+
+16:17:08:986	c37fe700	parse packet: 71
+16:17:08:989	c37fe700	ETH: Share rejected!
+16:17:08:990	c37fe700	new buf size: 0
+16:17:08:990	c37fe700	socket was closed remotely
+16:17:08:992	c37fe700	ETH: Job timeout, disconnect, retry in 20 sec...
+16:17:28:997	c37fe700	ETH: Stratum - connecting to 'eu1.ethpool.org' <188.165.235.31> port 3333
+16:17:29:071	c37fe700	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x63e4bd10ab6082a0f79ad69420be7bf843a01765.r01/yaraul@gmail.com", "x"], "id": 2, "method": "eth_submitLogin"}
+
+16:17:29:074	c37fe700	ETH: Stratum - Connected (eu1.ethpool.org:3333)
+16:17:29:145	c37fe700	got 77 bytes
+16:17:29:145	c37fe700	buf: {"id":999,"jsonrpc": "2.0","result": false,"error": "Invalid user provided"}
+
+16:17:29:145	c37fe700	parse packet: 71
+16:17:29:149	c37fe700	ETH: Share rejected!
+16:17:29:149	c37fe700	new buf size: 0
+16:17:29:149	c37fe700	socket was closed remotely
+16:17:29:151	c37fe700	ETH: Job timeout, disconnect, retry in 20 sec...
+16:17:37:430	d810d740	GPU0 t=25C fan=33%
+16:17:37:430	d810d740	em hbt: 8439, fm hbt: 5, 
+16:17:37:430	d810d740	watchdog - thread 0, hb time 96
+16:17:37:430	d810d740	watchdog - thread 1, hb time 96
+16:17:49:157	c37fe700	ETH: Stratum - connecting to 'eu1.ethpool.org' <188.165.235.31> port 3333
+16:17:49:239	c37fe700	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x63e4bd10ab6082a0f79ad69420be7bf843a01765.r01/yaraul@gmail.com", "x"], "id": 2, "method": "eth_submitLogin"}
+
+16:17:49:243	c37fe700	ETH: Stratum - Connected (eu1.ethpool.org:3333)
+16:17:49:324	c37fe700	got 77 bytes
+16:17:49:324	c37fe700	buf: {"id":999,"jsonrpc": "2.0","result": false,"error": "Invalid user provided"}
+
+16:17:49:324	c37fe700	parse packet: 71
+16:17:49:329	c37fe700	ETH: Share rejected!
+16:17:49:329	c37fe700	new buf size: 0
+16:17:49:329	c37fe700	socket was closed remotely
+16:17:49:331	c37fe700	ETH: Job timeout, disconnect, retry in 20 sec...
+16:18:07:466	d810d740	GPU0 t=25C fan=33%
+16:18:07:466	d810d740	em hbt: 18314, fm hbt: 10, 
+16:18:07:466	d810d740	watchdog - thread 0, hb time 76
+16:18:07:466	d810d740	watchdog - thread 1, hb time 76
+16:18:09:337	c37fe700	ETH: Stratum - connecting to 'eu1.ethpool.org' <188.165.235.31> port 3333
+16:18:09:410	c37fe700	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x63e4bd10ab6082a0f79ad69420be7bf843a01765.r01/yaraul@gmail.com", "x"], "id": 2, "method": "eth_submitLogin"}
+
+16:18:09:415	c37fe700	ETH: Stratum - Connected (eu1.ethpool.org:3333)
+16:18:09:486	c37fe700	got 77 bytes
+16:18:09:486	c37fe700	buf: {"id":999,"jsonrpc": "2.0","result": false,"error": "Invalid user provided"}
+
+16:18:09:486	c37fe700	parse packet: 71
+16:18:09:491	c37fe700	ETH: Share rejected!
+16:18:09:491	c37fe700	new buf size: 0
+16:18:09:491	c37fe700	socket was closed remotely
+16:18:09:493	c37fe700	ETH: Job timeout, disconnect, retry in 20 sec...
+16:18:21:839	d810d740	Quit signal received...

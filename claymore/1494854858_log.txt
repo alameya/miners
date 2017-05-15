@@ -1,0 +1,44 @@
+16:27:38:656	baa98740	args: -epool eu1.ethermine.org:4444 -ewal 0x63e4bd10ab6082a0f79ad69420be7bf843a01765.r01/yaraul@gmail.com -epsw x -mode 1 
+16:27:38:658	baa98740	
+16:27:38:660	baa98740	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+16:27:38:662	baa98740	บ      Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v9.3      บ
+16:27:38:664	baa98740	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+16:27:38:665	baa98740	
+16:27:38:871	baa98740	ETH: 1 pool is specified
+16:27:38:877	baa98740	Main Ethereum pool is eu1.ethermine.org:4444
+16:27:38:914	baa98740	OpenCL platform: AMD Accelerated Parallel Processing
+16:27:38:929	baa98740	OpenCL initializing...
+
+16:27:38:930	baa98740	AMD Cards available: 1 
+16:27:38:932	baa98740	GPU #0: Ellesmere, 4081 MB available, 36 compute units
+16:27:38:933	baa98740	GPU #0 recognized as Radeon RX 480/580
+16:27:38:935	baa98740	POOL/SOLO version
+16:27:38:935	baa98740	b343 
+16:27:38:935	baa98740	Platform: Linux
+16:27:38:978	baa98740	start building OpenCL program for GPU 0...
+16:27:39:069	baa98740	done
+16:27:39:278	baa98740	GPU #0: algorithm ASM
+16:27:39:279	baa98740	cudaGetDeviceCount failed (35, CUDA driver version is insufficient for CUDA runtime version), probably no CUDA devices
+16:27:39:281	baa98740	No NVIDIA CUDA GPUs detected.
+16:27:39:282	baa98740	Total cards: 1 
+16:27:48:739	baa98740	AMD ADL library not found.
+16:27:48:741	baa98740	amdgpu cnt: 1
+16:27:48:741	baa98740	No NVIDIA cards in the list, NVML library will not be used.
+16:27:48:847	baa98740	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+16:27:48:852	baa98740	ETH: eth-proxy stratum mode
+16:27:48:857	baa98740	Watchdog enabled
+16:27:48:862	baa98740	Remote management (READ-ONLY MODE) is enabled on port 3333
+16:27:48:867	baa98740	
+16:27:49:523	aa979700	ETH: Stratum - connecting to 'eu1.ethermine.org' <94.23.28.180> port 4444
+16:27:49:604	aa979700	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x63e4bd10ab6082a0f79ad69420be7bf843a01765.r01/yaraul@gmail.com", "x"], "id": 2, "method": "eth_submitLogin"}
+
+16:27:49:609	aa979700	ETH: Stratum - Connected (eu1.ethermine.org:4444)
+16:27:49:690	aa979700	got 77 bytes
+16:27:49:690	aa979700	buf: {"id":999,"jsonrpc": "2.0","result": false,"error": "Invalid user provided"}
+
+16:27:49:690	aa979700	parse packet: 71
+16:27:49:695	aa979700	ETH: Share rejected!
+16:27:49:695	aa979700	new buf size: 0
+16:27:49:695	aa979700	socket was closed remotely
+16:27:49:697	aa979700	ETH: Job timeout, disconnect, retry in 20 sec...
+16:27:56:477	baa98740	Quit signal received...
