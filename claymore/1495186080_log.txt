@@ -1,0 +1,15 @@
+12:28:00:217	40a2a740	args: -epool us1.ethpool.org:3333 -ewal 0xD69af2A796A737A103F12d2f0BCC563a13900E6F -epsw x -dpool stratum+tcp://dcr.suprnova.cc:3252 -dwal Redhex.my -dpsw x 
+12:28:00:219	40a2a740	
+12:28:00:220	40a2a740	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+12:28:00:221	40a2a740	บ      Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v9.3      บ
+12:28:00:221	40a2a740	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+12:28:00:222	40a2a740	
+12:28:00:425	40a2a740	ETH: 1 pool is specified
+12:28:00:427	40a2a740	Main Ethereum pool is us1.ethpool.org:3333
+12:28:00:429	40a2a740	DCR: 1 pool is specified
+12:28:00:431	40a2a740	Main Decred pool is dcr.suprnova.cc:3252
+12:28:00:455	40a2a740	OpenCL platform: AMD Accelerated Parallel Processing
+12:28:00:455	40a2a740	No AMD cards in the list.
+12:28:00:456	40a2a740	cudaGetDeviceCount failed (35, CUDA driver version is insufficient for CUDA runtime version), probably no CUDA devices
+12:28:00:456	40a2a740	No NVIDIA CUDA GPUs detected.
+12:28:00:457	40a2a740	No AMD OPENCL or NVIDIA CUDA GPUs found, exit
